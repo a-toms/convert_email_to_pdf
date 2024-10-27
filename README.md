@@ -8,15 +8,17 @@
 So, that's what this repo does.
 
 This repo contains scripts to:
-### .eml to .pdf
+### Convert .eml to .pdf
 1. Convert .eml files to .pdf files -> `convert_eml_to_pdf.py`
 You'll just need to state the path to your folder containing your .eml files. The script will convert each .eml file to a .pdf file in the same folder.
 
-### .pdf to .csv (plus enriched data)
+![Example of .eml to .pdf conversion](./images/eml_to_pdf.png)
+
+### Extract data from .pdf to .csv (plus enriched data)
 2. Parse any .pdf files to extract receipt data using an LLM (currently GPT4o Mini) to a .csv file. You can then import this straight into an Excel spreadsheet or Google Sheet. -> `build_receipts_index.py`
 You'll just need to state the path to your folder containing your .pdf files. The script will parse each .pdf file and save the data to a .csv file in the same folder, including the currency of the receipt, the transaction date, the purpose of the transaction, and the total amount.
 
-Example output:
+Example csv output:
 ```csv
 File Name,Total Amount ($),Currency,Transaction Date,Descriptive Details
 Receipt-2566-5568.pdf,47.42,USD,2050-06-01,"Render - Servers, PostgresDB, Redis usage for May 2050"
