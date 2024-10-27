@@ -1,12 +1,11 @@
 # Receipts to CSV
 
 ## Problem:
-- I needed to file taxes and had many email receipts (around 330) from companies (in multiple currencies and with different formats). I needed to extract the data from the receipts, and to send them to my accountant.
+1. I needed to file taxes. I had many email receipts (around 330) in `.eml` format. I needed to convert them to `.pdf` format before sending them to my accountant as a link to a cloud folder.
 
-- I also wanted to create a spreadsheet with the data to send to my accountant, including the currency of the receipt, the transaction date, the purpose of the transaction, and the total amount. This would allow me to check that I had included all the receipts.
+2. Give that the PDF receipts follow a non-standard format, I wanted to extract the data from the receipts to a spreadsheet in a standard format. I would also send this standardised data to my accountant. This includes the currency of the receipt, the transaction date, the purpose of the transaction, and the total amount. This would allow me to check that my accountant had managed to include all the receipts.
 
-
-So, that's what this repo helps me to do.
+So, that's what this repo does.
 
 This repo contains scripts to:
 ### .eml to .pdf
